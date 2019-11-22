@@ -1,0 +1,199 @@
+<head>
+		<title>My First HTML</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			h1 {
+			color: blue;
+			font-family: verdana;
+			font-size: 300%;
+			}
+			
+			p  {
+			border: 1px solid black;
+			padding: 10px;
+			margin: 30px;
+			}
+			
+			#p01 {
+			color: blue;
+			}
+			
+			p.error {
+			color: red;
+			}
+			
+			a:link, a:visited {
+			background-color: #f44336;
+			color: white;
+			padding: 15px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			}
+
+			a:hover, a:active {
+			background-color: lime;
+			}
+		</style>
+	</head>
+
+	<body style="background-color:powderblue;">
+	
+		<h1>This is the homepage</h1>
+		
+		<%= link_to 'Click here to go to the About Page', about_path %>
+
+		<h6>My First Heading</h6>
+		<h2 style="color:orange; text-align:center;">My First Heading</h2>
+		<h3 style="font-size:60px;color:blue">My First Heading</h3>
+		<h4 style="color:purple; font-size:300%">My First Heading</h4>
+		<h3 style="font-family:verdana;">My First Heading</h3>
+		<h6 style="font-family:courier;">My First Heading</h6>
+		
+
+		<p>My first paragraph.</p>
+		<p style="color:red">My second paragraph.</p>
+		<p style="color:green">My third paragraph.</p>
+		
+		<a href="https://www.google.com">This is a link to google</a>
+		
+		<br>
+		
+		<img src ="sample_image.jpg" alt="W3Schools.com" width="100" height="100">
+		<%= image_tag 'sample_image.jpg' %>
+		<br>
+		<button>Click me</button>
+		
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+		
+		<p>This is a <br> paragraph with a line break.</p>
+		
+		<p title="I'm a tooltip">
+			This is a paragraph.
+		</p>
+		
+		<p title=About W3Schools>
+			You cannot <strong>omit quotes around an attribute value 
+			if</strong> the value contains spaces.
+		</p>
+		
+		<p title='John "ShotGun" Nelson'>Title</p>
+		
+		<p title="John 'ShotGun' Nelson">Title</p>
+		
+		<h1>This is heading 1</h1>
+		<p>This is some text.</p>
+		<hr>
+		<h2>This is heading 2</h2>
+		<p>This is some other text.</p>
+		<hr>
+		
+		<p>
+			This <i>paragraph
+			contains a lo<small>t of lines
+			in the s</i>ource code,
+			but the brows</small>er
+			ignores it.
+		</p>
+
+		<p>
+			This <mark>paragraph
+			contains         a lot of spaces
+			in t<em>he </mark>source         code,
+			but the        browser
+			ignores </em>it.
+		</p>
+		
+		<p>This is<br>a paragraph<br>with line breaks.</p>
+		
+<pre>
+My Bonnie lies over the ocean.
+My <b>Bonnie lies over the sea.
+
+My Bonnie lies over</b> the ocean.
+Oh, bring back <del>my Bonnie to </del><ins> the Bonnie to </ins>me.
+</pre>
+
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<!-- Write your comments here -->
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:4px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:10px solid Violet;">Hello World</h1>
+
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+		
+		
+<p id="p01">I am different</p>
+
+<p class="error">I am different</p>
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools in new tab!</a>
+<br>
+<a href="https://www.w3schools.com/" target="_self">Visit W3Schools in current tab!</a>
+<br>
+<a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a>
+<br>
+<a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+<br>
+
+<a href="https://www.medecision.com">
+  <img src="sample_image.jpg" alt="alt text" style="width:142px;height:142px;border:0;">
+</a>
+<br>
+<a href="https://www.w3schools.com/html/" 
+   title="Go to W3Schools HTML section">
+   Visit our HTML Tutorial
+</a>
+<br>
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+<br>
+<a href="https://www.msn.com">MSN link</a>
+	</body>	
+<br>
