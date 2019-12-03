@@ -20,8 +20,8 @@
 					</div>
 				</div>
 				
-				<!-- only display edit/delete buttons if a user is logged in and is the author of that article -->
-				<% if logged_in? && current_user == article.user %>
+				<!-- only display edit/delete buttons if a user is logged in user is author of that article or admin -->
+				<% if logged_in? && (current_user == article.user || current_user.admin?) %>
 					<div class="article-actions">
 						<%= link_to "Edit this article",
 							edit_article_path(article),

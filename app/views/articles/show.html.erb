@@ -20,7 +20,7 @@
 		<div class="article-actions">
 		
 			<!-- only allow edit and delete article pages for users who are logged in and wrote that article -->
-			<% if logged_in? && current_user == @article.user %> 
+			<% if logged_in? && (current_user == @article.user || current_user.admin?) %> 
 				<%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
 				<%= link_to "Delete this article", 
 					article_path(@article),
