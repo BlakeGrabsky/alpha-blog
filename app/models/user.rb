@@ -1,7 +1,8 @@
 class User < ApplicationRecord
 	
 	#the user-article relationship is 1-M
-	has_many :articles
+	#an article cannot exist without a user, so if a user is destroyed, so are all of its respective articles
+	has_many :articles, dependent: :destroy
 	
 	#set user's email to all lowercase before saving
 	before_save {self.email = email.downcase}
